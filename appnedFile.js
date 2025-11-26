@@ -1,13 +1,13 @@
 const fs = require('fs');
 
 //  file create
-// fs.writeFileSync('./appendFileOutPut/userLogendFile.tex', "Aplication Started", (error) => {
-//     if (error) {
-//         console.error(error.meassage);
-//     } else {
-//         console.log("userLogendFile Created...");
-//     }
-// })
+fs.writeFileSync('./appendFileOutPut/userLogendFile.tex', "Aplication Started", (error) => {
+    if (error) {
+        console.error(error.meassage);
+    } else {
+        console.log("userLogendFile Created...");
+    }
+})
 
 const userEntry1 = `\n${new Date().toISOString()} User logged in successfully.`;
 
